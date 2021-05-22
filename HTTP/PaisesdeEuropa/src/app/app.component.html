@@ -1,0 +1,9 @@
+<div class="paises">
+    <div class="pais" *ngFor="let pais of paises">
+        <img [src]="pais.flag" alt="">
+        <h3>{{ pais.name }}</h3>
+        <h4>Capital: {{pais.capital}} </h4>
+
+
+    </div>
+</div>

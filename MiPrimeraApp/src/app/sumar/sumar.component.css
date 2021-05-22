@@ -1,0 +1,8 @@
+div {
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-style: solid;
+    border-color: black;
+}

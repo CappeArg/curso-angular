@@ -1,0 +1,13 @@
+<select (change)="onChange($event)">
+    <option value="uno">UNO</option>
+    <option value="dos">DOS</option>
+    <option value="tres">TRES</option>
+</select>
+<button (click)="onclick($event)">Capturar Evento</button>
+
+<div class="cuadrado" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()">
+    {{ mensaje }}
+</div>
+
+
+<input type="text" (change)="onChangeInput($event)" (input)="onInput($event)" (focus)="onFocus()" (blur)="onBlur()">

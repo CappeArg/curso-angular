@@ -1,0 +1,29 @@
+<!-- <ul>
+    <li *ngFor="let persona of personas">
+        {{persona.nombre}} {{persona.apellido}} - {{persona.edad}}
+    </li>
+</ul> -->
+<button (click)="onPersona()">Agregar Nueva Persona</button>
+<div class="personas">
+    <div *ngFor="let persona of personas" class="persona">
+        <h3>{{persona.nombre}} {{persona.apellido}}</h3>
+        <p>{{persona.edad}}</p>
+    </div>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of personas">
+            <td>{{ person.nombre }}</td>
+            <td>{{ person.apellido }}</td>
+            <td>{{ person.edad }}</td>
+        </tr>
+    </tbody>
+</table>
